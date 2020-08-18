@@ -1,5 +1,7 @@
 #include <Arduino.h>
 #include <U8g2lib.h>
+#include "Eye-Behavior/Eye.h"
+using namespace EyeBehavior;
 
 #ifdef U8X8_HAVE_HW_SPI
 #include <SPI.h>
@@ -12,8 +14,14 @@
 //U8G2_SSD1327_WS_128X128_1_4W_SW_SPI u8g2(U8G2_R0, /* clock=*/ 13, /* data=*/ 11, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 U8G2_SSD1327_WS_128X128_1_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 
+
+EyeConfig eyeconfig;
+ Eye eyeValue(&eyeconfig);
+
   
 void setup() {
+
+ 
   // put your setup code here, to run once:
   Serial.begin(9600);
 
