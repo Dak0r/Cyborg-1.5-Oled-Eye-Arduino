@@ -1,4 +1,4 @@
-# Cyborg-1.5-Oled-Eye
+# Cyborg-1.5-Oled-Eye-Arduino
 Displays an eye with natural random movement on an 1.5" Oled connected to an Arduino. For a Cyberpunk-ish Costume.
 Developed for this Wavesahre 1.5" Oled: https://amzn.to/34c2bcF
 
